@@ -1,5 +1,7 @@
 # Output factorial of 5, 6, 7 and 8
 
+# This was my best try prior to giving up because I kept getting "10:in `*': nil can't be coerced into Integer (TypeError)"
+
 #num = "5"
 =begin
 def factorial(num)
@@ -7,7 +9,7 @@ def factorial(num)
 	if num < 0
 		print "Give me a bigger number!"
 	else
-		return num == 0 ? 1 : num * factorial(num - 1)
+		print num == 0 ? 1 : num * factorial(num - 1)
 	end
 end
 
@@ -16,6 +18,8 @@ number = gets.chomp.to_i
 
 factorial(number)
 =end
+
+# Shamelessly stolen from Rosetta code, but I spent a lot of time and understand how it works!
 
 class Integer
   def factorial
